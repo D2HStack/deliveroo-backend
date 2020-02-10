@@ -449,7 +449,7 @@ const app = express();
 app.use(cors());
 
 app.get("/", async (req, res) => {
-  res.json("Hello World");
+  res.json(restaurantList);
 });
 
 const port = process.env.PORT || 3200;
