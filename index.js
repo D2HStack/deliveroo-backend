@@ -453,7 +453,7 @@ app.get("/", async (req, res) => {
   res.json(restaurantList);
 });
 
-const port = process.env.HEROKUAPP_URI || 3200;
+const port = process.env.PORT || 3200;
 app.listen(port, () => {
   console.log("Server has started");
 });
